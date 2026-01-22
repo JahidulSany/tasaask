@@ -31,12 +31,12 @@ p {
   padding: 9px 16px;
   background: var(--secondary-color);
   border-radius: 5px;
-  transition: all 0.6s ease;
 }
 
 .btn-button:hover {
   background-color: var(--primary-color);
   color: white;
+  transition: all 0.6s ease;
 }
 
 .nav-item-active {
@@ -48,8 +48,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
-  margin: 0 15px;
+  padding: 15px 30px;
 }
 
 h3.logo {
@@ -62,6 +61,16 @@ h3.logo {
 h3 span.logo-span {
   color: var(--primary-color);
   font-size: 2.2rem;
+}
+
+.position-sticky {
+  border-radius: 10px;
+  position: sticky;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.09);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 100;
 }
 
 nav ul.navbar {
@@ -77,11 +86,11 @@ nav ul li.nav-items {
   font-size: 1.3rem;
   font-weight: bold;
   text-transform: capitalize;
-  transition: all 0.6s ease;
 }
 
 nav ul li.nav-items:hover {
   color: var(--primary-color);
+  transition: all 0.6s ease;
 }
 
 .sign-in-up {
@@ -135,19 +144,26 @@ nav ul li.nav-items:hover {
   margin: 0 auto;
 }
 
+.form-container:hover {
+  box-shadow: 4px 4px 10px 0 black;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
 .direct-contact-desc {
   font-size: 1.2rem;
   color: var(--font-color);
+  font-weight: 500;
 }
 
 a.contact-links {
   color: var(--font-color);
-  transition: all 0.3s ease-in;
   font-weight: bold;
 }
 
 a.contact-links:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  transition: all 0.3s ease-in;
 }
 
 label {
