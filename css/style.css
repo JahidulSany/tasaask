@@ -1,0 +1,222 @@
+/* Custom CSS Styles */
+:root {
+  --primary-color: #10c3c9;
+  --secondary-color: orange;
+  --text-color: #141414;
+  --primary-font: Verdana, Geneva, Tahoma, sans-serif;
+  --secondary-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+}
+
+.section-container {
+  padding: 100px 15px;
+  margin: 0 15px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin: 20px 0;
+}
+
+.btn-button {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 9px 16px;
+  background: var(--secondary-color);
+  border-radius: 5px;
+  transition: all 0.6s ease;
+}
+
+.btn-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.nav-item-active {
+  color: var(--primary-color);
+}
+
+/* Header CSS Styles */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  margin: 0 15px;
+}
+
+h3.logo {
+  text-transform: math-auto;
+  font-size: 2rem;
+  padding: 30px;
+  font-family: var(--primary-font);
+}
+
+h3 span.logo-span {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+}
+
+nav ul.navbar {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+nav ul li.nav-items {
+  margin: 0px 15px;
+  padding: 3px 12px;
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: all 0.6s ease;
+}
+
+nav ul li.nav-items:hover {
+  color: var(--primary-color);
+}
+
+.sign-in-up {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* Footer Styles */
+.footer{
+    margin: 0;
+    padding: 75px 0;
+    background-color: var(--text-color);
+}
+
+.footer p {
+  text-align: center;
+  color:antiquewhite;
+}
+
+/* -----------------------------------
+<<<<-----  Responsive Design ----->>>>
+------------------------------------ */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .section-container {
+    padding: 50px 15px;
+    margin: 0 15px;
+  }
+
+  .btn-button {
+    padding: 5px 12px;
+  }
+
+  h3.logo {
+    font-size: 1.3rem;
+    padding: 15px;
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+
+  nav ul.navbar {
+    flex-direction: column;
+  }
+
+  nav ul.navbar {
+    margin-top: 0;
+  }
+
+  nav ul li.nav-items {
+    margin: 0;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .section-container {
+    padding: 50px 15px;
+    margin: 0 15px;
+  }
+
+  .btn-button {
+    padding: 6px 12px;
+  }
+
+  h3.logo {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+
+  nav ul.navbar {
+    margin-top: 0;
+  }
+
+  nav ul li.nav-items {
+    margin: 0;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .btn-button {
+    padding: 6px 12px;
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul.navbar {
+    gap: 0;
+  }
+
+  h3.logo {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .btn-button {
+    padding: 7px 14px;
+  }
+
+  h3.logo {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  h3.logo {
+    font-size: 1.7rem;
+    padding: 25px;
+  }
+
+  .header-container {
+    justify-content: space-between;
+  }
+}
