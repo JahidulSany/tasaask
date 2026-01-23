@@ -21,6 +21,7 @@ p {
   font-size: 1.1rem;
   color: var(--text-color);
   margin: 20px 0;
+  font-family: var(--primary-font);
 }
 
 .btn-button {
@@ -35,6 +36,21 @@ p {
 .btn-button:hover {
   background-color: var(--primary-color);
   color: white;
+  transition: all 0.6s ease;
+}
+
+a.top-link {
+  text-align: center;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 900;
+  cursor: pointer;
+  color: blueviolet;
+  padding: 10px 0;
+}
+
+.top-link:hover {
+  color: var(--text-color);
   transition: all 0.6s ease;
 }
 
@@ -103,7 +119,7 @@ nav ul li.nav-items:hover {
   font-size: 2.5rem;
   text-align: center;
   font-weight: 800;
-  color: var(--font-color);
+  color: var(--text-color);
   margin: 50px 0;
 }
 
@@ -122,21 +138,17 @@ nav ul li.nav-items:hover {
   font-size: 1.3em;
 }
 
-/* Banner Page */
+/* Home Page */
 .bg-image {
+  position: relative;
   background-image: url('../images/banner-image.jpg');
-}
-
-.home-container {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100%;
   height: 100vh;
-  position: relative;
 }
 
-.home-container::before {
+.bg-image::before {
   position: absolute;
   content: '';
   left: 0;
@@ -144,16 +156,18 @@ nav ul li.nav-items:hover {
   background: #000;
   height: 100%;
   width: 100%;
-  opacity: 0.3;
+  opacity: 0.4;
+  z-index: 1;
 }
 
 .home-content {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100%;
   color: var(--text-color);
 }
 
@@ -166,16 +180,12 @@ nav ul li.nav-items:hover {
 }
 
 .home-content p.section-desc {
-  color: antiquewhite;
-  font-size: 1.5rem;
   margin: 20px 0 40px;
+  text-align: center;
   width: 700px;
+  color: #f0f9f3;
 }
 
-.home-content .btn-button.get-started-button {
-  font-size: 1.3rem;
-  padding: 12px 30px;
-}
 /* Contact Page */
 .contact-form {
   display: flex;
@@ -188,7 +198,7 @@ nav ul li.nav-items:hover {
 .contact-title {
   margin: 30px 0;
   font-size: 2rem;
-  color: var(--font-color);
+  color: var(--text-color);
 }
 
 .contact-desc {
@@ -196,7 +206,7 @@ nav ul li.nav-items:hover {
   font-size: 1.1rem;
   width: 700px;
   margin: 0 auto 30px;
-  color: var(--font-color);
+  color: var(--text-color);
 }
 
 .form-container {
@@ -215,13 +225,13 @@ nav ul li.nav-items:hover {
 
 .direct-contact-desc {
   font-size: 1.2rem;
-  color: var(--font-color);
+  color: var(--text-color);
   font-weight: 500;
 }
 
 a.contact-links {
-  color: var(--font-color);
-  font-weight: bold;
+  color: var(--text-color);
+  font-weight: 500;
 }
 
 a.contact-links:hover {
@@ -231,7 +241,7 @@ a.contact-links:hover {
 
 label {
   font-size: 1.2rem;
-  color: var(--font-color);
+  color: var(--text-color);
   font-weight: 600;
 }
 
@@ -243,7 +253,7 @@ textarea {
   margin: 10px 0;
   border-radius: 5px;
   font-size: 1.1rem;
-  color: var(--font-color);
+  color: var(--text-color);
   font-weight: 600;
   border: 2px solid var(--primary-color);
 }
@@ -305,6 +315,16 @@ textarea {
     margin: 0;
   }
 
+  /* Home Page */
+  .home-content h1.section-title {
+    font-size: 2rem;
+    padding: 20px 0;
+  }
+
+  .home-content p.section-desc {
+    width: 70%;
+  }
+
   /* Contact Page */
   .section-header {
     font-size: 2rem;
@@ -352,6 +372,16 @@ textarea {
     margin: 0;
   }
 
+  /* Home page */
+  .home-content h1.section-title {
+    font-size: 2.5rem;
+    padding: 20px 0;
+  }
+
+  .home-content p.section-desc {
+    width: 80%;
+  }
+
   /* Contact Page */
   .section-header {
     font-size: 2.2rem;
@@ -373,12 +403,13 @@ textarea {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .btn-button {
     padding: 7px 15px;
   }
 
   .header-container {
+    padding: 80px 20px;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -392,6 +423,16 @@ textarea {
     padding: 20px;
   }
 
+  /* Home Page */
+  .home-content h1.section-title {
+    font-size: 3rem;
+    padding: 25px 0;
+  }
+
+  .home-content p.section-desc {
+    width: 90%;
+  }
+
   /* Contact Page */
   .contact-form {
     margin: 0 30px;
@@ -399,7 +440,7 @@ textarea {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .btn-button {
     padding: 8px 17px;
   }
@@ -409,28 +450,8 @@ textarea {
     padding: 20px;
   }
 
-  /* Contact Page */
-  .contact-form {
-  }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .btn-button {
-    padding: 12px 25px;
-  }
-
-  h3.logo {
-    font-size: 1.7rem;
-    padding: 25px;
-  }
-
-  .header-container {
-    justify-content: space-between;
-  }
-
-  /* Contact Page */
-  .contact-form {
-    flex-direction: row;
+  nav ul li.nav-items {
+    margin: 0px 15px;
+    padding: 3px 7px;
   }
 }
