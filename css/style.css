@@ -167,7 +167,8 @@ nav ul li.nav-items:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  height: 100%;
+  width: 100%;
   color: var(--text-color);
 }
 
@@ -175,15 +176,19 @@ nav ul li.nav-items:hover {
   color: darkcyan;
   font-weight: 800;
   font-size: 4rem;
-  padding: 30px 0;
   text-transform: capitalize;
 }
 
-.home-content p.section-desc {
-  margin: 20px 0 40px;
+p.section-desc {
+  margin: 20px auto 40px;
   text-align: center;
   width: 700px;
   color: #f0f9f3;
+}
+
+.home-cta {
+  text-align: center;
+  color: white;
 }
 
 /* Contact Page */
@@ -321,7 +326,7 @@ textarea {
     padding: 20px 0;
   }
 
-  .home-content p.section-desc {
+  p.section-desc {
     width: 70%;
   }
 
@@ -378,7 +383,7 @@ textarea {
     padding: 20px 0;
   }
 
-  .home-content p.section-desc {
+  p.section-desc {
     width: 80%;
   }
 
@@ -429,7 +434,7 @@ textarea {
     padding: 25px 0;
   }
 
-  .home-content p.section-desc {
+  p.section-desc {
     width: 90%;
   }
 
