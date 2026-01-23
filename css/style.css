@@ -186,9 +186,30 @@ p.section-desc {
   color: #f0f9f3;
 }
 
+/* Home Page Call to Action */
 .home-cta {
   text-align: center;
   color: white;
+}
+
+/* Home Page Features */
+.home-features {
+  padding-top: 0;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 50px 15px;
+  text-align: center;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 20px auto;
 }
 
 /* Contact Page */
@@ -330,6 +351,11 @@ textarea {
     width: 70%;
   }
 
+  .features-container {
+    grid-template-columns: 1fr;
+    grid-template-row: 1fr;
+  }
+
   /* Contact Page */
   .section-header {
     font-size: 2rem;
@@ -351,6 +377,11 @@ textarea {
 
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  html,
+  p {
+    font-size: 1rem;
+  }
+
   .section-container {
     padding: 50px 15px;
     margin: 0 15px;
@@ -387,6 +418,11 @@ textarea {
     width: 80%;
   }
 
+  .features-container {
+    grid-template-columns: 1fr;
+    grid-template-row: 1fr;
+  }
+
   /* Contact Page */
   .section-header {
     font-size: 2.2rem;
@@ -409,6 +445,11 @@ textarea {
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  html,
+  p {
+    font-size: 1rem;
+  }
+
   .btn-button {
     padding: 7px 15px;
   }
@@ -436,6 +477,11 @@ textarea {
 
   p.section-desc {
     width: 90%;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr;
+    grid-template-row: 1fr;
   }
 
   /* Contact Page */
