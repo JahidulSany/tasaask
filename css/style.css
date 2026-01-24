@@ -183,7 +183,6 @@ p.section-desc {
   margin: 20px auto 40px;
   text-align: center;
   width: 700px;
-  color: #f0f9f3;
 }
 
 /* Home Page Call to Action */
@@ -210,6 +209,42 @@ p.section-desc {
   height: 80px;
   display: block;
   margin: 20px auto;
+}
+
+/* About Us Page */
+.about-hero,
+.about-mission{
+  padding-bottom: 0;
+}
+
+.about-container,
+.mission-container,
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-hero-image,
+.mission-icon,
+.team-icon {
+  width: 400px;
+  height: 400px;
+}
+
+.about-hero-text-container h3,
+.mission-text-container h3,
+.team-text-container h3 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+p.about-desc {
+  text-align: left;
+  margin-left: 0;
 }
 
 /* Contact Page */
@@ -356,6 +391,32 @@ textarea {
     grid-template-row: 1fr;
   }
 
+  /* About Us Page */
+  .about-hero,
+  .about-mission {
+    padding-bottom: 0;
+  }
+
+  .about-hero-image,
+  .mission-icon,
+  .team-icon {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
+
+  .about-hero-text-container h3,
+  .mission-text-container h3,
+  .team-text-container h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  p.about-desc {
+    text-align: center;
+    margin: 0 auto;
+  }
+
   /* Contact Page */
   .section-header {
     font-size: 2rem;
@@ -423,6 +484,32 @@ textarea {
     grid-template-row: 1fr;
   }
 
+  /* About Us Page */
+  .about-hero,
+  .about-mission {
+    padding-bottom: 0;
+  }
+
+  .about-hero-image,
+  .mission-icon,
+  .team-icon {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
+
+  .about-hero-text-container h3,
+  .mission-text-container h3,
+  .team-text-container h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  p.about-desc {
+    text-align: center;
+    margin: 0 auto;
+  }
+
   /* Contact Page */
   .section-header {
     font-size: 2.2rem;
@@ -482,6 +569,32 @@ textarea {
   .features-container {
     grid-template-columns: 1fr;
     grid-template-row: 1fr;
+  }
+
+  /* About Us Page */
+  .about-hero,
+  .about-mission {
+    padding-bottom: 0;
+  }
+
+  .about-hero-image,
+  .mission-icon,
+  .team-icon {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+  }
+
+  .about-hero-text-container h3,
+  .mission-text-container h3,
+  .team-text-container h3 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  p.about-desc {
+    text-align: center;
+    margin: 0 auto;
   }
 
   /* Contact Page */
